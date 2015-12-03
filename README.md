@@ -1,4 +1,4 @@
-# Python Script to plot Perf exported CSV
+# Python Script to execute Perf with custom header at Output file
 
 This is a basic script that executes perf and save the output in an output file with custom header.
 
