@@ -61,8 +61,7 @@ output = sp.stderr.read()
 sp.terminate()
 
 #core_perf str to list
-core_perf = core_perf.split(',')
-#core_perf =  map(int, core_perf)
+#core_perf = core_perf.split(',')
 
 #Output file:
 with open('output.csv', 'w') as outfile:
