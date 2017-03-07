@@ -45,7 +45,7 @@ else:
 	perf_event_text = "power/energy-ram/"
 
 #Final command:
-cmd = 'sudo taskset -c %s perf stat -A -C %s -I %s -x , -e "%s" taskset -c %s %s' % (core_ts_perf, core_perf, interval, perf_event_text, core_ts_task, task)
+cmd = 'sudo taskset -c %s perf stat -A -C %s -I %s -x ; -e "%s" taskset -c %s %s' % (core_ts_perf, core_perf, interval, perf_event_text, core_ts_task, task)
 
 #Print Execution:
 print '\n Executing following task:'
